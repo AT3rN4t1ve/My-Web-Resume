@@ -4,10 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // เพิ่มบรรทัดนี้เพื่อให้ Dark Mode ทำงาน
+  darkMode: 'class',
   theme: {
     extend: {
-       // เพิ่ม animation สำหรับ blob effect (ถ้าต้องการให้เหมือนเป๊ะ)
+       // ตั้งค่า Font Family หลัก
+       fontFamily: {
+         sans: ['Outfit', 'Prompt', 'sans-serif'],
+       },
+       // Animation เดิมของคุณ
        animation: {
          blob: "blob 7s infinite",
        },
