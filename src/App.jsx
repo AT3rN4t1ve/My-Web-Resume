@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // เพิ่ม .jsx ต่อท้ายชื่อไฟล์ให้ครบ
+import Certificates from './Components/Certificates.jsx';
+import CallToAction from './Components/CallToAction.jsx';
 import Navbar from './Components/Navbar.jsx';
 import Hero from './Components/Hero.jsx';
 import About from './Components/About.jsx';
