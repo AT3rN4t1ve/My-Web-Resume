@@ -100,7 +100,7 @@ export const PORTFOLIO_DATA = {
         "👥 Multi-user System พร้อม Role Management"
       ],
       tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana", "PostgreSQL"],
-      github: "https://github.com/AT3rN4t1ve", // ✅ ถ้าเป็นงานบริษัทอาจใส่ null
+      github: null, // ✅ ถ้าเป็นงานบริษัทอาจใส่ null
       demo: null, // ✅ งานบริษัทมักไม่มี public demo
       isCompanyProject: true, // ✅ Flag บอกว่าเป็นงานบริษัท
     },

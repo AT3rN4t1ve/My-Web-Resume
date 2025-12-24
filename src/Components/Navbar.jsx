@@ -47,9 +47,16 @@ const Navbar = ({ isDark, toggleTheme }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
-              {`<${PORTFOLIO_DATA.personal.nickname} />`}
-            </span>
+            <div className="flex items-center gap-1">
+              <span className="text-xl font-bold font-mono text-gray-900 dark:text-white">
+                My Portfolio
+              </span>
+              <motion.div
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 0.8 }}
+                className="w-2 h-5 bg-indigo-600"
+              />
+            </div>
           </div>
 
           <nav className="hidden md:flex space-x-8">
