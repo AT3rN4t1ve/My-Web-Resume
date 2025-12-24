@@ -25,6 +25,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Certificates', href: '#certificates' }, 
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
@@ -50,7 +51,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
             {/* Logo */}
             <div className="flex-shrink-0 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'})}>
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
-                Portfolio
+                My Portfolio
               </span>
             </div>
             

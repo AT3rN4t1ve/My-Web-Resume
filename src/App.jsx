@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-// เพิ่ม .jsx ต่อท้ายชื่อไฟล์ให้ครบ
-import Certificates from './Components/Certificates.jsx';
-import CallToAction from './Components/CallToAction.jsx';
+// Import Component ทั้งหมด
 import Navbar from './Components/Navbar.jsx';
 import Hero from './Components/Hero.jsx';
 import About from './Components/About.jsx';
 import Skills from './Components/Skills.jsx';
+import Certificates from './Components/Certificates.jsx'; // Import แล้ว
 import Projects from './Components/Projects.jsx';
 import Experience from './Components/Experience.jsx';
 import Contact from './Components/Contact.jsx';
+import CallToAction from './Components/CallToAction.jsx'; // Import แล้ว
 import Footer from './Components/Footer.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
 
@@ -50,9 +50,11 @@ export default function App() {
         <Hero />
         <About />
         <Skills />
+        <Certificates />
         <Projects />
         <Experience />
         <Contact />
+        <CallToAction />
       </main>
       
       <Footer />

@@ -29,7 +29,7 @@ export const PORTFOLIO_DATA = {
       id: 1,
       role: "Full Stack Developer Intern",
       company: "Betime Solution",
-      period: "พ.ย. 2568 - ก.พ. 2569 (กำลังฝึกงาน)",
+      period: "พ.ย. 2568 - ก.พ. 2569",
       description: "พัฒนา Enterprise Web Applications สำหรับหน่วยงานภาครัฐ โดยได้รับมอบหมายให้ทำงาน 2 โปรเจกต์หลัก ทั้งด้าน Frontend Development (Angular), Backend Development (Java Spring Boot) และการทำงานกับ Search Engine Technology (Elasticsearch & Kibana)",
       achievements: [
         "✅ พัฒนา Component Library และ Design System ด้วย Angular เพื่อใช้งานร่วมกันทั้งองค์กร",
@@ -99,7 +99,7 @@ export const PORTFOLIO_DATA = {
         "📋 Export ผลการค้นหาในรูปแบบต่างๆ",
         "👥 Multi-user System พร้อม Role Management"
       ],
-      tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana", "PostgreSQL"],
+      tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana"],
       github: null, // ✅ ถ้าเป็นงานบริษัทอาจใส่ null
       demo: null, // ✅ งานบริษัทมักไม่มี public demo
       isCompanyProject: true, // ✅ Flag บอกว่าเป็นงานบริษัท
