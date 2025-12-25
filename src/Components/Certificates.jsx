@@ -15,7 +15,7 @@ const certificatesData = [
     name: "AI for Medical Informatics: The Application of Optical Character Recognition Technology in the Transcription of Pharmaceutical Labels",
     issuer: "Published in Journal of Advances in Information Technology, Vol. 16, No. 9, 2025",
     date: "2025",
-    link: "https://www.jait.us/articles/2025/JAIT-V16N9-133",
+    link: "https://www.jait.us/show-258-1756-1.html",
     image: ResearchImg,
   },
   // 2. ใบเซอร์ (Certificate)
