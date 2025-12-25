@@ -7,36 +7,50 @@ export const PORTFOLIO_DATA = {
     github: "https://github.com/AT3rN4t1ve",
     linkedin: null, // ✅ แก้ไขใส่ลิงก์จริง หรือ null ถ้าไม่มี
     location: "Nakhonsawan, Thailand",
-    about: "นักศึกษาชั้นปีที่ 4 สาขาวิทยาการคอมพิวเตอร์ มีความสนุกกับการเรียนรู้เทคโนโลยีใหม่ๆ และมุ่งมั่นที่จะพัฒนาตนเองในสายงาน Full-stack Development หรือตำแหน่งงานอื่นๆที่เกี่ยวข้องกับสายที่เรียนมา",
+    about: "",
   },
   
   education: [
     {
-      year: "2021 - ปัจจุบัน",
-      degree: "วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)",
-      school: "มหาวิทยาลัยพะเยา",
-      details: "ชั้นปีที่ 4 | มุ่งเน้นการพัฒนา Full-stack Web Applications" // ✅ ลบ GPAX แล้วเน้น Skill
+      year: "2021 - Present",
+      degree: "Bachelor of Science (Computer Science)",
+      school: "University of Phayao",
     },
     {
       year: "2018 - 2021",
-      degree: "มัธยมศึกษาตอนปลาย (วิทย์-คณิต)",
-      school: "โรงเรียนโพฒิสารศึกษา"
+      degree: "High School (Science-Mathematics)",
+      school: "Potisarnsuksa School"
     }
   ],
   
   experience: [
     {
       id: 1,
+      role: "Applied Medical Informatics for Consume Medicine Behavior",
+      company: "University Of Phayao",
+      period: "Oct 2024 - Mar 2025",
+      description: "Mobile application for medication management and tracking consumption behavior. Developed with Flutter (Frontend) and Node.js (Backend), featuring medication reminders, usage history tracking, and drug information search.",
+      achievements: [
+        "💊 Medication reminder system using Local Notifications",
+        "📝 Track and record medication usage history",
+        "🔍 Search for medication information and side effects",
+        "📊 Real-time dashboard summarizing medication usage data"
+      ],
+      tags: ["Dart", "Flutter", "JavaScript", "Node.js", "Express.js", "MySQL", "REST API", "Git"]
+    },
+    
+    {
+      id: 2,
       role: "Full Stack Developer Intern",
       company: "Betime Solution",
-      period: "พ.ย. 2568 - ก.พ. 2569",
-      description: "พัฒนา Enterprise Web Applications สำหรับหน่วยงานภาครัฐ โดยได้รับมอบหมายให้ทำงาน 2 โปรเจกต์หลัก ทั้งด้าน Frontend Development (Angular), Backend Development (Java Spring Boot) และการทำงานกับ Search Engine Technology (Elasticsearch & Kibana)",
+      period: "Nov 2025 - Feb 2026",
+      description: "Developed enterprise web applications for government agencies, leading 2 key projects. Responsibilities encompassed Frontend Development (Angular), Backend Development (Java Spring Boot), and implementing Search Engine Technology (Elasticsearch & Kibana)",
       achievements: [
-        "✅ พัฒนา Component Library และ Design System ด้วย Angular เพื่อใช้งานร่วมกันทั้งองค์กร",
-        "✅ สร้างระบบค้นหาสิทธิบัตรด้วย Elasticsearch สามารถค้นหาข้อมูลหลักหมื่นรายการได้ภายใน < 1 วินาที",
-        "✅ ออกแบบ Dashboard และ Data Visualization ด้วย Kibana สำหรับวิเคราะห์ข้อมูลแบบ Real-time",
-        "✅ พัฒนา REST APIs ด้วย Java Spring Boot เชื่อมต่อกับ Database และ Elasticsearch",
-        "✅ ทำงานร่วมกับทีมในการออกแบบ UX/UI ที่ตอบโจทย์ผู้ใช้งานจริง"
+        "✅ Developed a centralized Component Library and Design System using Angular to standardize UI/UX across the organization",
+        "✅ Engineered a high-performance patent search system using Elasticsearch, achieving query response times of under 1 second for tens of thousands of records",
+        "✅ Designed interactive Dashboards and Data Visualizations using Kibana to facilitate real-time data analysis",
+        "✅ Developed robust RESTful APIs using Java Spring Boot to seamlessly integrate databases with Elasticsearch",
+        "✅ Collaborated with cross-functional teams on UX/UI design to deliver user-centric solutions that meet actual business requirements"
       ],
       tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana","REST API", "Git"]
     }
@@ -77,27 +91,27 @@ export const PORTFOLIO_DATA = {
     {
       id: 1,
       title: "Applied Medical Informatics for Consume Medicine Behavior",
-      description: "แอปพลิเคชันมือถือสำหรับจัดการข้อมูลยาและติดตามพฤติกรรมการบริโภคยา พัฒนาด้วย Flutter (Frontend) และ Node.js (Backend) มีระบบแจ้งเตือนเวลากินยา บันทึกประวัติการใช้ยา และค้นหาข้อมูลยา",
+      description: "Mobile application for medication management and tracking consumption behavior. Developed with Flutter (Frontend) and Node.js (Backend), featuring medication reminders, usage history tracking, and drug information search.",
       features: [
-        "💊 ระบบแจ้งเตือนเวลากินยาแบบ Local Notification",
-        "📝 บันทึกและติดตามประวัติการใช้ยา",
-        "🔍 ค้นหาข้อมูลยาและผลข้างเคียง",
-        "📊 Dashboard สรุปข้อมูลการใช้ยาแบบ Real-time"
+        "💊 Medication reminder system using Local Notifications",
+        "📝 Track and record medication usage history",
+        "🔍 Search for medication information and side effects",
+        "📊 Real-time dashboard summarizing medication usage data"
       ],
       tags: ["Flutter", "Dart", "Node.js", "Express.js", "Prisma", "MySQL"],
-      github: "https://github.com/AT3rN4t1ve",
+      github: "https://github.com/AT3rN4t1ve/Back-End-Final-Project",
       demo: null, // ✅ ใส่ null ถ้ายังไม่ deploy หรือใส่ลิงก์จริง
     },
     {
       id: 2,
       title: "DIP Search System",
-      description: "ระบบค้นหาและจัดการข้อมูลสิทธิบัตรสำหรับกรมทรัพย์สินทางปัญญา (Department of Intellectual Property) ใช้ Elasticsearch สำหรับ Full-text Search ที่รวดเร็วและแม่นยำ และ Kibana สำหรับการวิเคราะห์และแสดงผลข้อมูลแบบ Real-time",
+      description: "Patent information search and management system for the Department of Intellectual Property (DIP). Utilizes Elasticsearch for fast and accurate Full-text Search, and Kibana for real-time data analysis and visualization.",
       features: [
-        "🔍 Full-text Search ด้วย Elasticsearch - ค้นหาได้รวดเร็ว < 1 วินาที",
-        "📈 Real-time Data Visualization ด้วย Kibana",
-        "🎯 Advanced Filter และ Faceted Search",
-        "📋 Export ผลการค้นหาในรูปแบบต่างๆ",
-        "👥 Multi-user System พร้อม Role Management"
+        "🔍 Full-text Search with Elasticsearch - Fast search response < 1 second",
+        "📈 Real-time Data Visualization with Kibana",
+        "🎯 Advanced Filter and Faceted Search",
+        "📋 Export search results in various formats",
+        "👥 Multi-user System with Role Management"
       ],
       tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana"],
       github: null, // ✅ ถ้าเป็นงานบริษัทอาจใส่ null

@@ -23,19 +23,19 @@ const CallToAction = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            มีโปรเจกต์น่าสนใจอยากให้ช่วยไหมครับ?
+            Have an interesting project you'd like help with?
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto text-lg">
-            ผมพร้อมเรียนรู้และร่วมสร้างสรรค์ผลงานคุณภาพ ไม่ว่าจะเป็นงาน Frontend หรือ Full Stack มาคุยกันก่อนได้ครับ
+            I am ready to learn and collaborate on high-quality work, whether it's Frontend or Full Stack. Let's talk!
           </p>
           
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block bg-white text-indigo-600 px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all"
+            className="inline-block px-8 py-4 bg-white text-indigo-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
           >
-            ทักทายผมได้เลย
+            Let's work together
           </motion.a>
         </motion.div>
       </div>

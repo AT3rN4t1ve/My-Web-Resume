@@ -23,7 +23,7 @@ const Certificates = () => {
   return (
     <section id="certificates" className="py-20 bg-gray-50 dark:bg-slate-800/50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Certifications" subtitle="ความสำเร็จและการเรียนรู้เพิ่มเติม" />
+        <SectionTitle title="Certifications" subtitle="Achievements and Continuous Learning" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificatesData.map((cert, index) => (
@@ -36,26 +36,22 @@ const Certificates = () => {
               className="group bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-slate-700 flex flex-col"
             >
               <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-slate-800">
-                {/* ตรวจสอบว่ามีรูปไหม ถ้ามีให้แสดงรูป */}
+                {/* Check if there is an image, if so display it */}
                 {cert.image ? (
-                  <img 
-                    src={cert.image} 
-                    alt={cert.name} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={cert.image} alt={cert.name} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-indigo-50 dark:bg-indigo-900/20 text-indigo-400">
-                    <Award size={64} />
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">
+                    <Award size={48} />
                   </div>
                 )}
                 
                 {cert.link && (
-                  <div className="absolute inset-0 bg-indigo-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <a 
                       href={cert.link} 
                       target="_blank" 
-                      rel="noreferrer" 
-                      className="flex items-center gap-2 bg-white text-indigo-700 px-4 py-2 rounded-full font-medium transform scale-90 group-hover:scale-100 transition-all shadow-lg hover:bg-indigo-50"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 bg-white text-indigo-600 px-4 py-2 rounded-full font-medium transform scale-90 group-hover:scale-100 transition-all shadow-lg hover:bg-indigo-50"
                     >
                       <span>View Certificate</span>
                       <ExternalLink size={16} />

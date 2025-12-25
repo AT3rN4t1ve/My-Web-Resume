@@ -16,14 +16,15 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("ระบบส่งข้อความกำลังอยู่ในช่วงปรับปรุง กรุณาติดต่อทาง Email โดยตรงครับ");
+    // แปลข้อความแจ้งเตือน (Alert) เป็นภาษาอังกฤษ
+    alert("The messaging system is currently under maintenance. Please contact via Email directly.");
     formRef.current.reset();
   };
 
   return (
     <section id="contact" className="py-20 bg-white dark:bg-slate-900/50 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Get In Touch" subtitle="สนใจร่วมงานหรือมีคำถาม สอบถามได้เลยครับ" />
+        <SectionTitle title="Get In Touch" subtitle="Interested in collaboration or have questions? Feel free to ask." />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-slate-700">
           
@@ -32,7 +33,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-2">Contact Information</h3>
               <p className="text-indigo-100 mb-8">
-                ช่องทางการติดต่อที่สะดวกที่สุดคือทาง Email หรือ LinkedIn ครับ
+                The most convenient way to contact me is via Email or LinkedIn.
               </p>
               
               <div className="space-y-6">
@@ -72,11 +73,11 @@ const Contact = () => {
             {/* ส่วนที่ 1: แสดง Email แบบง่าย (Active) */}
             <div className="space-y-6 text-center md:text-left">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                    ส่งข้อความหาผม
+                    Send me a message
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                    ขณะนี้แบบฟอร์มหน้าเว็บกำลังปรับปรุง <br/>
-                    คุณสามารถส่งอีเมลหาผมโดยตรงได้ที่:
+                    Currently, the web form is under maintenance. <br/>
+                    You can send an email to me directly at:
                 </p>
 
                 <div className="p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-700 break-all text-center">
@@ -91,7 +92,7 @@ const Contact = () => {
                         className="w-full flex justify-center items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-all"
                     >
                         <Send size={18} className="mr-2" />
-                        ส่งอีเมล (Open Mail App)
+                        Send Email (Open Mail App)
                     </a>
                     
                     <button 
@@ -99,7 +100,7 @@ const Contact = () => {
                         className="w-full flex justify-center items-center px-6 py-3 bg-white dark:bg-slate-700 border border-gray-300 dark:border-slate-600 text-gray-700 dark:text-white font-medium rounded-md hover:bg-gray-50 dark:hover:bg-slate-600 transition-all"
                     >
                         {copied ? <Check size={18} className="mr-2 text-green-500" /> : <Copy size={18} className="mr-2" />}
-                        {copied ? 'คัดลอกเรียบร้อย' : 'Copy Email Address'}
+                        {copied ? 'Copied!' : 'Copy Email Address'}
                     </button>
                 </div>
             </div>

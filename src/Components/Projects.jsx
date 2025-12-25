@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-white dark:bg-slate-900/50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Featured Projects" subtitle="ผลงานที่ผ่านมา (Click เพื่อดูโค้ด)" />
+        <SectionTitle title="Featured Projects" subtitle="Past Projects (Click to view code)" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PORTFOLIO_DATA.projects.map((project, index) => (

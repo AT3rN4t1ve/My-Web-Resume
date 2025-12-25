@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-slate-900/50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="About Me" subtitle="เส้นทางการศึกษาและเป้าหมาย" />
+        <SectionTitle title="About Me" subtitle="Educational Journey and Goals" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
@@ -19,10 +19,10 @@ const About = () => {
           >
              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <Terminal className="mr-3 text-indigo-500" /> 
-                My Passion
+                About Me
              </h3>
              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                "{PORTFOLIO_DATA.personal.about} ผมเชื่อว่าซอฟต์แวร์ที่ดีไม่ได้มีแค่โค้ดที่สะอาด แต่ต้องแก้ปัญหาของผู้ใช้ได้จริง และมีความสวยงามน่าใช้งาน"
+                "{PORTFOLIO_DATA.personal.about}"
              </p>
              <div className="space-y-3">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">

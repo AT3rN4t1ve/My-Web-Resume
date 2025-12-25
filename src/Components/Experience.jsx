@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 transition-colors duration-300">
        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Experience" subtitle="ประสบการณ์ทำงานและการพัฒนาทักษะ" />
+        <SectionTitle title="Experience" subtitle="Work Experience and Skill Development" />
         
         <div className="space-y-12">
           {PORTFOLIO_DATA.experience.map((exp, index) => (
