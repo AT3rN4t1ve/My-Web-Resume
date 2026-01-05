@@ -1,17 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Layout, Database, Terminal } from 'lucide-react';
-import { PORTFOLIO_DATA } from '../Data/portfolio';
+import { PORTFOLIO_DATA } from '../Data/portfolio'; // ตรวจสอบ path ให้ตรงกับเครื่องคุณนะครับ
 import SectionTitle from './SectionTitle';
 
 const Skills = () => {
+  // สไตล์กลางสำหรับ Tag (จะได้ไม่ต้องเขียนซ้ำหลายรอบ)
+  const tagStyle = "px-3 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium border border-gray-200 dark:border-slate-700 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors";
+
   return (
     <section id="skills" className="py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Technical Skills" subtitle="Tools And Tech Stack" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Frontend */}
+          
+          {/* 1. Frontend Section */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -22,28 +26,17 @@ const Skills = () => {
               <Layout className="w-8 h-8 text-blue-500 mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Frontend</h3>
             </div>
-            <div className="space-y-4">
+            {/* โค้ดส่วนนี้สั้นลง เพราะเปลี่ยนจากหลอดพลังเป็น Tags */}
+            <div className="flex flex-wrap gap-2">
               {PORTFOLIO_DATA.skills.frontend.map((skill, idx) => (
-                <div key={idx}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2 overflow-hidden">
-                    <motion.div 
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.2 }}
-                      className="bg-blue-500 h-2 rounded-full"
-                    />
-                  </div>
-                </div>
+                <span key={idx} className={tagStyle}>
+                  {skill}
+                </span>
               ))}
             </div>
           </motion.div>
 
-          {/* Backend */}
+          {/* 2. Backend Section */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -55,28 +48,17 @@ const Skills = () => {
               <Database className="w-8 h-8 text-green-500 mr-3" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Backend</h3>
             </div>
-            <div className="space-y-4">
+            {/* โค้ดส่วนนี้ก็สั้นลงเช่นกัน */}
+            <div className="flex flex-wrap gap-2">
               {PORTFOLIO_DATA.skills.backend.map((skill, idx) => (
-                <div key={idx}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">{skill.level}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 dark:bg-slate-700 rounded-full h-2 overflow-hidden">
-                    <motion.div 
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.2 }}
-                      className="bg-green-500 h-2 rounded-full"
-                    />
-                  </div>
-                </div>
+                <span key={idx} className={tagStyle}>
+                  {skill}
+                </span>
               ))}
             </div>
           </motion.div>
 
-          {/* Tools */}
+          {/* 3. Tools Section (อันนี้เหมือนเดิม แต่ใช้ตัวแปร tagStyle ร่วมกัน) */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -90,12 +72,13 @@ const Skills = () => {
             </div>
             <div className="flex flex-wrap gap-2">
               {PORTFOLIO_DATA.skills.tools.map((tool, idx) => (
-                <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium border border-gray-200 dark:border-slate-700">
+                <span key={idx} className={tagStyle}>
                   {tool}
                 </span>
               ))}
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>

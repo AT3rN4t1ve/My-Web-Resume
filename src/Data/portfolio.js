@@ -2,7 +2,7 @@ export const PORTFOLIO_DATA = {
   personal: {
     name: "Atthakit Khampraphai",
     nickname: "Petch",
-    roles: ["Computer Science Student", "Frontend Developer", "Backend Developer", "Full Stack Developer"],
+    roles: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
     email: "kh.callphet@gmail.com",
     github: "https://github.com/AT3rN4t1ve",
     linkedin: "https://www.linkedin.com/in/atthakit-khampraphai/", 
@@ -42,7 +42,7 @@ export const PORTFOLIO_DATA = {
     {
       id: 2,
       role: "Full Stack Developer Intern",
-      company: "Betime Solution",
+      company: "Betime Solution.co.Ltd",
       period: "Nov 2025 - Feb 2026",
       description: "Developed enterprise web applications for government agencies, leading 2 key projects. Responsibilities encompassed Frontend Development (Angular), Backend Development (Java Spring Boot), and implementing Search Engine Technology (Elasticsearch & Kibana)",
       achievements: [
@@ -58,21 +58,22 @@ export const PORTFOLIO_DATA = {
   
   skills: {
     frontend: [
-      { name: "React.js", level: 85 },
-      { name: "Angular", level: 75 }, 
-      { name: "JavaScript (ES6+)", level: 80 },
-      { name: "TypeScript", level: 75 }, 
-      { name: "Tailwind CSS", level: 75 },
-      { name: "HTML5 / CSS3", level: 80 },
-      { name: "Flutter", level: 70 },
+      "Reactjs",
+      "Angular",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "Dart",
+      "Flutter",
     ],
     backend: [
-      { name: "Node.js", level:85 },
-      { name: "Express.js", level: 85 },
-      { name: "Java SpringBoot", level: 75 },
-      { name: "MySQL / PostgreSQL", level: 80 },
-      { name: "Prisma", level: 80 },
-      { name: "Elasticsearch", level: 70 },
+      "Node.js",
+      "Express.js",
+      "Java SpringBoot",
+      "MySQL / PostgreSQL",
+      "Prisma ORM",
+      "Elasticsearch",
     ],
     tools: [
       "Git / GitHub",
@@ -80,7 +81,8 @@ export const PORTFOLIO_DATA = {
       "Figma",
       "Postman",
       "Vercel",
-      "Elasticsearch & Kibana",
+      "Elasticsearch",
+      "Kibana",
       "Docker",
       "IntelliJ IDEA",
     ]
@@ -116,7 +118,7 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: 3,
-      title: "DIP Search System",
+      title: "DIP Search System (Intern)",
       description: "Patent information search and management system for the Department of Intellectual Property (DIP). Utilizes Elasticsearch for fast and accurate Full-text Search, and Kibana for real-time data analysis and visualization.",
       features: [
         "🔍 Full-text Search with Elasticsearch - Fast search response < 1 second",
