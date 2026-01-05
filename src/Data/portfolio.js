@@ -58,10 +58,11 @@ export const PORTFOLIO_DATA = {
   
   skills: {
     frontend: [
-      "Reactjs",
+      "React",
       "Angular",
       "JavaScript (ES6+)",
       "TypeScript",
+      "Python",
       "Tailwind CSS",
       "HTML5 / CSS3",
       "Dart",
@@ -71,12 +72,14 @@ export const PORTFOLIO_DATA = {
       "Node.js",
       "Express.js",
       "Java SpringBoot",
-      "MySQL / PostgreSQL",
+      "MySQL",
+      "PostgreSQL",
       "Prisma ORM",
       "Elasticsearch",
     ],
     tools: [
-      "Git / GitHub",
+      "Git",
+      "GitHub",
       "VS Code",
       "Figma",
       "Postman",
@@ -84,6 +87,7 @@ export const PORTFOLIO_DATA = {
       "Elasticsearch",
       "Kibana",
       "Docker",
+      "OCR",
       "IntelliJ IDEA",
     ]
   },
@@ -98,7 +102,7 @@ export const PORTFOLIO_DATA = {
         "🎨 Designed a user-friendly interface focused on real-world patient usability",
         "📷 Integrated OCR functionality to automatically scan and extract prescription details",
       ],
-      tags: ["Flutter", "Dart", "Node.js", "Express.js", "Prisma", "MySQL"],
+      tags: ["Flutter", "Dart", "Node.js", "Express.js", "Prisma", "MySQL", "Git"],
       github: "https://github.com/AT3rN4t1ve/Front-End-Final-Project",
       demo: null, 
       image: "/assets/pill.png", 
@@ -111,7 +115,7 @@ export const PORTFOLIO_DATA = {
         "⚙️ Built a robust back-end system with Node.js, Prisma, and MySQL",
         "🔐 Implemented secure API communication and JWT authentication"
       ],
-      tags: ["Flutter", "Dart", "Node.js", "Express.js", "Prisma", "MySQL"],
+      tags: ["JavaScript", "Node.js", "Express.js", "Prisma ORM", "MySQL", "Git"],
       github: "https://github.com/AT3rN4t1ve/Back-End-Final-Project",
       demo: null,
       image: "/assets/database.png", 
@@ -127,7 +131,7 @@ export const PORTFOLIO_DATA = {
         "📋 Export search results in various formats",
         "👥 Multi-user System with Role Management"
       ],
-      tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana"],
+      tags: ["Angular", "TypeScript", "Java SpringBoot", "Elasticsearch", "Kibana", "Git"],
       github: null, 
       demo: null, 
       isCompanyProject: true, 

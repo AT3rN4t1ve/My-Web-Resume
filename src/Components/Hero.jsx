@@ -57,7 +57,13 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
                 href="#contact"
-                className="flex items-center justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-medium transition-colors shadow-lg hover:shadow-indigo-500/30"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('#contact')?.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }}
+                className="flex items-center justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-medium transition-colors shadow-lg hover:shadow-indigo-500/30 cursor-pointer"
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
