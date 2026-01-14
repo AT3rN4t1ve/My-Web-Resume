@@ -83,14 +83,14 @@ const Hero = () => {
               */}
 
               {/* แบบที่ 2: Placeholder (ใช้ตอนนี้ไปก่อน เพื่อบอกว่ากำลังทำ) */}
-              <button 
+              {/* <button 
                 // แก้ไขข้อความ Alert
                 onClick={() => alert("The complete Resume is currently being updated. (Coming Soon!)")}
                 className="flex items-center justify-center px-8 py-3 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 hover:bg-gray-50 dark:hover:bg-slate-600 text-gray-900 dark:text-white rounded-full font-medium transition-colors shadow-sm"
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
-              </button>
+              </button> */}
 
             </div>
 

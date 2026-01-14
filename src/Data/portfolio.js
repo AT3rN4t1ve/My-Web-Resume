@@ -2,7 +2,7 @@ export const PORTFOLIO_DATA = {
   personal: {
     name: "Atthakit Khampraphai",
     nickname: "Petch",
-    roles: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
+    roles: ["Backend Developer", "Full Stack Developer"],
     email: "kh.callphet@gmail.com",
     github: "https://github.com/AT3rN4t1ve",
     linkedin: "https://www.linkedin.com/in/atthakit-khampraphai/", 
