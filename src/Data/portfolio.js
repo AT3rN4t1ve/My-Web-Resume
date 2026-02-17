@@ -12,12 +12,12 @@ export const PORTFOLIO_DATA = {
   
   education: [
     {
-      year: "2021 - Present",
+      year: "2022 - Present",
       degree: "Bachelor of Science (Computer Science)",
       school: "University of Phayao",
     },
     {
-      year: "2018 - 2021",
+      year: "2019 - 2021",
       degree: "High School (Science-Mathematics)",
       school: "Photisansuksa School"
     }
