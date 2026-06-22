@@ -1,31 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
-// Import Component ทั้งหมด
 import Navbar from './Components/Navbar.jsx';
 import Hero from './Components/Hero.jsx';
 import About from './Components/About.jsx';
 import Skills from './Components/Skills.jsx';
-import Certificates from './Components/Certificates.jsx'; // Import แล้ว
+import Certificates from './Components/Certificates.jsx';
 import Projects from './Components/Projects.jsx';
 import Experience from './Components/Experience.jsx';
 import Contact from './Components/Contact.jsx';
-import CallToAction from './Components/CallToAction.jsx'; // Import แล้ว
+import CallToAction from './Components/CallToAction.jsx';
 import Footer from './Components/Footer.jsx';
 import ScrollToTop from './Components/ScrollToTop.jsx';
 
 export default function App() {
-  const [isDark, setIsDark] = useState(false);
+  // Default to dark (navy) theme — matches the new palette
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    } else {
+
+    if (savedTheme === 'light') {
       setIsDark(false);
       document.documentElement.classList.remove('dark');
+    } else {
+      // default dark
+      setIsDark(true);
+      document.documentElement.classList.add('dark');
     }
   }, []);
 
@@ -41,11 +42,9 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen bg-gray-50 dark:bg-slate-900 bg-grid-pattern font-sans transition-colors duration-300`}>
+    <div className="min-h-screen bg-gray-50 dark:bg-[#0a0f1e] bg-grid-pattern font-sans transition-colors duration-300">
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
-      
       <ScrollToTop />
-      
       <main>
         <Hero />
         <About />
@@ -56,7 +55,6 @@ export default function App() {
         <Contact />
         <CallToAction />
       </main>
-      
       <Footer />
     </div>
   );
