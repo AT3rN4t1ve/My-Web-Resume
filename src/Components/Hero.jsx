@@ -5,7 +5,7 @@ import profileImage from '../profile.jpg';
 import { PORTFOLIO_DATA } from '../Data/portfolio';
 import useTypewriter from '../hooks/useTypewriter';
 
-const Hero = () => {
+const Hero = ({ t }) => {
   const [roleIndex, setRoleIndex] = useState(0);
   const roles = PORTFOLIO_DATA?.personal?.roles || ['Developer'];
   const currentRole = roles[roleIndex];
@@ -62,7 +62,7 @@ const Hero = () => {
             </motion.div>
 
             <h2 className="text-xl md:text-2xl font-semibold text-gray-500 dark:text-slate-400 mb-3">
-              Hello, I'm
+              {t.greeting}
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold font-display text-gray-900 dark:text-white mb-6 tracking-tight leading-tight">
               {PORTFOLIO_DATA.personal.name}
@@ -70,7 +70,7 @@ const Hero = () => {
 
             <div className="h-16 md:h-20 mb-4">
               <h2 className="text-2xl md:text-4xl font-bold text-gray-600 dark:text-slate-300">
-                I am a{' '}
+                {t.iam}{' '}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-400">
                   {typedRole}
                 </span>
