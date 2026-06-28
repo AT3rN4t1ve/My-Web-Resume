@@ -27,6 +27,16 @@ const certificatesData = [
     date: "2023",
     link: "https://www.freecodecamp.org/certification/atthakit/responsive-web-design",
     image: webResponseImg,
+  },
+  // 3. ใบเซอร์ (Certificate)
+  {
+    id: 3,
+    type: "certificate",
+    name: "โครงการเสริมสร้างและยกระดับทักษะระดับพื้นฐาน (Basic) ด้าน Data Science",
+    issuer: "FreeCodeCamp",
+    date: "2023",
+    link: "https://www.freecodecamp.org/certification/atthakit/responsive-web-design",
+    image: webResponseImg,
   }
 ];
 
