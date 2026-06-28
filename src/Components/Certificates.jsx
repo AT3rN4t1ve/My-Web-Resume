@@ -6,21 +6,12 @@ import SectionTitle from './SectionTitle';
 // Import รูปภาพ
 import webResponseImg from '../assets/Web Response.png';
 import ResearchImg from '../assets/nano.png';
+import dataScience from '../assets/data-science-cert.png';
 
 const certificatesData = [
-  // 1. งานวิจัย (Research)
+  // 1. ใบเซอร์ (Certificate)
   {
     id: 1,
-    type: "research", // ระบุว่าเป็นงานวิจัย
-    name: "AI for Medical Informatics: The Application of Optical Character Recognition Technology in the Transcription of Pharmaceutical Labels",
-    issuer: "Published in Journal of Advances in Information Technology, Vol. 16, No. 9, 2025",
-    date: "2025",
-    link: "https://www.jait.us/show-258-1756-1.html",
-    image: ResearchImg,
-  },
-  // 2. ใบเซอร์ (Certificate)
-  {
-    id: 2,
     type: "certificate",
     name: "Web Responsive Design",
     issuer: "FreeCodeCamp",
@@ -28,15 +19,25 @@ const certificatesData = [
     link: "https://www.freecodecamp.org/certification/atthakit/responsive-web-design",
     image: webResponseImg,
   },
-  // 3. ใบเซอร์ (Certificate)
+  // 2. ใบเซอร์ (Certificate)
+  {
+  id: 2,
+  type: "certificate",
+  name: "โครงการเสริมสร้างและยกระดับทักษะระดับพื้นฐาน (Basic) ด้าน Data Science",
+  issuer: "สถาบันข้อมูลขนาดใหญ่ (องค์กรมหาชน)",
+  date: "2024",
+  link: null,     // ไม่มีลิงก์
+  image: dataScience,
+  },
+  // 3. งานวิจัย (Research)
   {
     id: 3,
-    type: "certificate",
-    name: "โครงการเสริมสร้างและยกระดับทักษะระดับพื้นฐาน (Basic) ด้าน Data Science",
-    issuer: "FreeCodeCamp",
-    date: "2023",
-    link: "https://www.freecodecamp.org/certification/atthakit/responsive-web-design",
-    image: webResponseImg,
+    type: "research", // ระบุว่าเป็นงานวิจัย
+    name: "AI for Medical Informatics: The Application of Optical Character Recognition Technology in the Transcription of Pharmaceutical Labels",
+    issuer: "Published in Journal of Advances in Information Technology, Vol. 16, No. 9, 2025",
+    date: "2025",
+    link: "https://www.jait.us/show-258-1756-1.html",
+    image: ResearchImg,
   }
 ];
 
