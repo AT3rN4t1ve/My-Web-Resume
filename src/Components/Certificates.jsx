@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle';
 // Import รูปภาพ
 import webResponseImg from '../assets/Web Response.png';
 import ResearchImg from '../assets/nano.png';
-import dataScience from '../assets/data-science-cert.png';
+import dataScience from '../assets/Data Science.png';
 
 const certificatesData = [
   // 1. ใบเซอร์ (Certificate)
