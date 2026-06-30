@@ -4,11 +4,11 @@ import { Calendar, CheckCircle } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../Data/portfolio';
 import SectionTitle from './SectionTitle';
 
-const Experience = () => {
+const Experience = ({ t }) => {
   return (
     <section id="experience" className="py-20 transition-colors duration-300">
        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Experience" subtitle="Work Experience and Skill Development" />
+        <SectionTitle title={t.title} subtitle={t.subtitle} />
         
         <div className="space-y-12">
           {PORTFOLIO_DATA.experience.map((exp, index) => (
@@ -48,7 +48,7 @@ const Experience = () => {
                        <div className="mb-4">
                          <h5 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
                            <CheckCircle size={16} className="mr-2 text-green-500" />
-                           Key Achievements:
+                           {t.achievements}
                          </h5>
                          <ul className="space-y-2">
                            {exp.achievements.map((achievement, idx) => (

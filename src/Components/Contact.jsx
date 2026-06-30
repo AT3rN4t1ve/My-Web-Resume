@@ -4,7 +4,7 @@ import { Mail, MapPin, Github, Linkedin, Send, Copy, Check } from 'lucide-react'
 import { PORTFOLIO_DATA } from '../Data/portfolio';
 import SectionTitle from './SectionTitle';
 
-const Contact = () => {
+const Contact = ({ t }) => {
   const [copied, setCopied] = useState(false);
   const formRef = useRef();
 
@@ -24,16 +24,16 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white dark:bg-slate-900/50 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Get In Touch" subtitle="Interested in collaboration or have questions? Feel free to ask." />
+        <SectionTitle title={t.title} subtitle={t.subtitle} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-50 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-slate-700">
           
           {/* Contact Info (Left Side) */}
           <div className="p-8 bg-indigo-600 text-white flex flex-col justify-between">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-2">{t.info}</h3>
               <p className="text-indigo-100 mb-8">
-                The most convenient way to contact me is via Email or LinkedIn.
+                {t.infoDesc}
               </p>
               
               <div className="space-y-6">
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="flex items-start">
                   <MapPin className="w-6 h-6 mr-4 text-indigo-300" />
                   <div>
-                    <p className="text-sm text-indigo-200">Location</p>
+                    <p className="text-sm text-indigo-200">{t.location}</p>
                     <p className="font-medium">{PORTFOLIO_DATA.personal.location}</p>
                   </div>
                 </div>
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-12">
-              <p className="text-indigo-200 text-sm mb-4">Follow me</p>
+              <p className="text-indigo-200 text-sm mb-4">{t.follow}</p>
               <div className="flex space-x-4">
                 <a href={PORTFOLIO_DATA.personal.github} target="_blank" rel="noreferrer" className="p-2 bg-indigo-500 rounded-full hover:bg-indigo-400 transition-colors">
                   <Github size={20} />
@@ -73,11 +73,10 @@ const Contact = () => {
             {/* ส่วนที่ 1: แสดง Email แบบง่าย (Active) */}
             <div className="space-y-6 text-center md:text-left">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Send me a message
+                    {t.send}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                    Currently, the web form is under maintenance. <br/>
-                    You can send an email to me directly at:
+                <p className="text-gray-600 dark:text-gray-400 whitespace-pre-line">
+                    {t.sendDesc}
                 </p>
 
                 <div className="p-4 bg-white dark:bg-slate-900 rounded-lg border border-gray-200 dark:border-slate-700 break-all text-center">
@@ -92,7 +91,7 @@ const Contact = () => {
                         className="w-full flex justify-center items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-all"
                     >
                         <Send size={18} className="mr-2" />
-                        Send Email (Open Mail App)
+                        {t.openMail}
                     </a>
                     
                     <button 
@@ -100,7 +99,7 @@ const Contact = () => {
                         className="w-full flex justify-center items-center px-6 py-3 bg-white dark:bg-slate-700 border border-gray-300 dark:border-slate-600 text-gray-700 dark:text-white font-medium rounded-md hover:bg-gray-50 dark:hover:bg-slate-600 transition-all"
                     >
                         {copied ? <Check size={18} className="mr-2 text-green-500" /> : <Copy size={18} className="mr-2" />}
-                        {copied ? 'Copied!' : 'Copy Email Address'}
+                        {copied ? t.copied : t.copy}
                     </button>
                 </div>
             </div>

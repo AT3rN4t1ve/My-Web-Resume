@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 
-const CallToAction = () => {
+const CallToAction = ({ t }) => {
   return (
     <section className="py-16 bg-indigo-600 dark:bg-indigo-900 relative overflow-hidden">
         {/* Background Patterns */}
@@ -19,14 +19,14 @@ const CallToAction = () => {
         >
           <div className="inline-flex items-center justify-center p-2 bg-indigo-500/30 rounded-full mb-6 backdrop-blur-sm">
              <Sparkles className="w-5 h-5 text-yellow-300 mr-2" />
-             <span className="text-indigo-100 font-medium">Open to new opportunities</span>
+             <span className="text-indigo-100 font-medium">{t.badge}</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Have an interesting project you'd like help with?
+            {t.heading}
           </h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto text-lg">
-            I am ready to learn and collaborate on high-quality work, whether it's Frontend or Full Stack. Let's talk!
+            {t.body}
           </p>
           
           <motion.a
@@ -35,7 +35,7 @@ const CallToAction = () => {
             whileTap={{ scale: 0.95 }}
             className="inline-block px-8 py-4 bg-white text-indigo-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
           >
-            Let's work together
+            {t.btn}
           </motion.a>
         </motion.div>
       </div>

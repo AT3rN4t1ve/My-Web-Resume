@@ -4,11 +4,11 @@ import { Terminal, MapPin, Mail } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../Data/portfolio';
 import SectionTitle from './SectionTitle';
 
-const About = () => {
+const About = ({ t }) => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-[#0d1424] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="About Me" subtitle="Educational Journey and Goals" />
+        <SectionTitle title={t.title} subtitle={t.subtitle} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left card */}
@@ -21,7 +21,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold font-display text-gray-900 dark:text-white mb-4 flex items-center gap-3">
               <Terminal className="text-cyan-400" />
-              About Me
+              {t.heading}
             </h3>
             <p className="text-gray-600 dark:text-slate-400 leading-relaxed mb-6">
               "{PORTFOLIO_DATA.personal.about}"

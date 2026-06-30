@@ -41,7 +41,7 @@ const certificatesData = [
   }
 ];
 
-const Certificates = () => {
+const Certificates = ({ t }) => {
   // ชุดสี Pastel สำหรับหัวการ์ด
   const headerColors = [
     'bg-orange-50', // สีสำหรับใบที่ 1
@@ -52,7 +52,7 @@ const Certificates = () => {
   return (
     <section id="certificates" className="py-20 bg-gray-50 dark:bg-slate-800/50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Certifications & Research" subtitle="Achievements, Publications, and Continuous Learning" />
+        <SectionTitle title={t.title} subtitle={t.subtitle} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificatesData.map((cert, index) => {
@@ -100,7 +100,7 @@ const Certificates = () => {
                         rel="noreferrer"
                         className="flex items-center gap-2 bg-white text-indigo-600 px-4 py-2 rounded-full font-medium transform scale-90 group-hover:scale-100 transition-all shadow-lg hover:bg-indigo-50"
                       >
-                        <span>{cert.type === 'research' ? 'Read Paper' : 'View Certificate'}</span>
+                        <span>{cert.type === 'research' ? t.readPaper : t.viewCert}</span>
                         <ExternalLink size={16} />
                       </a>
                     </div>
@@ -124,7 +124,7 @@ const Certificates = () => {
 
                   <div className="mt-auto pt-4 border-t border-gray-100 dark:border-slate-800 flex items-center text-sm text-gray-500 dark:text-gray-400">
                     <Calendar size={16} className="mr-2" />
-                    <span>{cert.type === 'research' ? 'Published:' : 'Issued:'} {cert.date}</span>
+                    <span>{cert.type === 'research' ? t.published : t.issued} {cert.date}</span>
                   </div>
                 </div>
               </motion.div>

@@ -16,7 +16,7 @@ const tagVariants = {
   visible: { opacity: 1, scale: 1,    y: 0, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } },
 };
 
-const Skills = () => {
+const Skills = ({ t }) => {
   const sections = [
     {
       icon: <Layout className="w-7 h-7 text-cyan-400" />,
@@ -44,7 +44,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-[#0a0f1e] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle title="Technical Skills" subtitle="Tools And Tech Stack" />
+        <SectionTitle title={t.title} subtitle={t.subtitle} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((sec, sIdx) => (
